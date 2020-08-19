@@ -5,7 +5,7 @@ export default function Home() {
   console.log()
   return <> 
   <Helmet
-      title='asdasd1213'
+      title="SOME VENDOR'S PAGE"
     >
       <script>
         {`
