@@ -13,10 +13,10 @@ export default function Home() {
     <h2>SOME VENDOR'S PAGE</h2>
     <script>
         {`
-        document.addEventListener("DOMContentLoaded", function (){
-        let iframe = document.createElement("iframe");
+        document.addEventListener('DOMContentLoaded', function (){
+        let iframe = document.createElement('iframe');
         iframe.src = 'https://someservice.netlify.app/checker';
-        iframe.setAttribute("style", "display:none;");
+        iframe.setAttribute('style', 'display:none;');
         document.body.appendChild(iframe);
         })
         `}
