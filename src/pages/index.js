@@ -7,20 +7,20 @@ export default function Home() {
   <Helmet
       title='asdasd1213'
     >
-      <script>
+      
+    </Helmet>
+  <div>
+    <h2>SOME VENDOR'S PAGE</h2>
+    <script>
         {`
         document.addEventListener("DOMContentLoaded", function (){
         let iframe = document.createElement("iframe");
-        iframe.src = 'http://localhost:8001/checker';
+        iframe.src = 'https://someservice.netlify.app/checker';
         iframe.setAttribute("style", "display:none;");
         document.body.appendChild(iframe);
         })
         `}
       </script>
-    </Helmet>
-  <div>
-    <script scr={''} ></script>
-    <h2>SOME VENDOR'S PAGE</h2>
   </div>
   </>
 }
