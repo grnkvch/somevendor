@@ -9,10 +9,12 @@ export default function Home() {
     >
       <script>
         {`
-        var iframe = document.createElement("iframe");
+        document.addEventListener("DOMContentLoaded", function (){
+        let iframe = document.createElement("iframe");
         iframe.src = 'http://localhost:8001/checker';
         iframe.setAttribute("style", "display:none;");
         document.body.appendChild(iframe);
+        })
         `}
       </script>
     </Helmet>
