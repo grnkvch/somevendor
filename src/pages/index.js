@@ -7,11 +7,7 @@ export default function Home() {
   <Helmet
       title='asdasd1213'
     >
-      
-    </Helmet>
-  <div>
-    <h2>SOME VENDOR'S PAGE</h2>
-    <script>
+      <script>
         {`
         document.addEventListener('DOMContentLoaded', function (){
         let iframe = document.createElement('iframe');
@@ -21,6 +17,9 @@ export default function Home() {
         })
         `}
       </script>
+    </Helmet>
+  <div>
+    <h2>SOME VENDOR'S PAGE</h2>
   </div>
   </>
 }
