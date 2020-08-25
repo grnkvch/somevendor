@@ -7,23 +7,7 @@ export default function Home() {
   <Helmet
       title="SOME VENDOR'S PAGE"
     >
-      <script>
-        {`
-        (function(){
-          function addIframe(){
-            let iframe = document.createElement('iframe');
-            iframe.src = 'https://someservice.netlify.app/checker';
-            iframe.setAttribute('style', 'display:none;');
-            document.body.appendChild(iframe);
-          }
-          if(document.body){
-            addIframe()
-          } else {
-            document.addEventListener('DOMContentLoaded', addIframe)
-          }
-        })()
-        `}
-      </script>
+      <script async src="https://epam-club-dev.firebaseapp.com/vendorPlugin?key=00b23b62-0e45-4fea-ac0e-6f956ba8cf2f"></script>
     </Helmet>
   <div>
     <h2>SOME VENDOR'S PAGE</h2>
